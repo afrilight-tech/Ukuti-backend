@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY ='django-insecure-=z0pw(-mj5lpmo4%@1d*wn!2m&#5yx6k)63r*aia!f&*o2)80&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['ukuti-backend.onrender.com', 'localhost']
 CSRF_TRUSTED_ORIGINS = ['https://ukuti-backend.onrender.com', 'http://127.0.0.1:5173/']

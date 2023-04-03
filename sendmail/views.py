@@ -18,7 +18,7 @@ def sendmail(request):
             subject,
             deliver,
             settings.DEFAULT_FROM_EMAIL,
-            ['aaamenricko999@gmail.com'],
+            ['habeeb@afrilight.tech'],
             fail_silently= False
         )
         return JsonResponse({'message': 'Email sent successfully'})
