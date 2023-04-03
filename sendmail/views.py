@@ -17,8 +17,9 @@ def sendmail(request):
           send_mail(
             subject,
             deliver,
-            settings.DEFAULT_FROM_EMAIL,
+            settings.EMAIL_HOST_USER,
             ['habeeb@afrilight.tech'],
+            
             fail_silently= False
         )
         return JsonResponse({'message': 'Email sent successfully'})

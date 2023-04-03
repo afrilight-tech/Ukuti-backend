@@ -25,8 +25,8 @@ SECRET_KEY ='django-insecure-=z0pw(-mj5lpmo4%@1d*wn!2m&#5yx6k)63r*aia!f&*o2)80&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ukuti-backend.onrender.com', 'localhost']
-CSRF_TRUSTED_ORIGINS = ['https://ukuti-backend.onrender.com', 'http://127.0.0.1:5173/']
+ALLOWED_HOSTS = ['ukuti-backend.onrender.com', 'localhost', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://ukuti-backend.onrender.com', 'http://127.0.0.1:5173/', 'http://localhost:5173/']
 CSRF_COOKIE_HTTPONLY = True
 CSRF_COOKIE_SECURE = True
 
@@ -128,8 +128,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'mail.amentuale.com'
-DEFAULT_FROM_EMAIL = "Ukuti Tuale <admin@amentuale.com>"
-EMAIL_HOST_USER = 'admin@amentuale.com'
+EMAIL_HOST_USER = "admin@amentuale.com"
+EMAIL_HOST_PASSWORD = 'admin-amentuale'
 EMAIL_PORT =  587
 EMAIL_USE_TLS = True
-EMAIL_HOST_PASSWORD = 'admin-amentuale'
