@@ -17,7 +17,7 @@ def sendmail(request):
           send_mail(
             subject,
             deliver,
-            settings.EMAIL_HOST_USER,
+            email,
             ['habeeb@afrilight.tech'],           
             fail_silently= False
         )

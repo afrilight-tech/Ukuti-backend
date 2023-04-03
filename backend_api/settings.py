@@ -27,8 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['ukuti-backend.onrender.com', 'localhost', '127.0.0.1']
 CSRF_TRUSTED_ORIGINS = ['https://ukuti-backend.onrender.com', 'http://127.0.0.1:5173', 'http://localhost:5173']
-CSRF_COOKIE_HTTPONLY = True
-CSRF_COOKIE_SECURE = True
+# CSRF_COOKIE_HTTPONLY = True
+# CSRF_COOKIE_SECURE = True
 
 # Application definition
 
@@ -125,10 +125,11 @@ STATIC_URL = 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'mail.amentuale.com'
-EMAIL_HOST_USER = "admin@amentuale.com"
-EMAIL_HOST_PASSWORD = 'admin-amentuale'
 EMAIL_PORT =  587
 EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'admin@amentuale.com'
+EMAIL_HOST_PASSWORD = 'admin-amentuale'
+
